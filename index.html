@@ -1,0 +1,47 @@
+<!doctype ..html>
+<html>
+    <head>
+        <title>icon in bottom-right</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding:0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height:100vh;
+                background-color: red;
+            }
+            .content-section {
+                position: relative;
+                width: 300px;
+                padding: 20px;
+                border: 2px solid #ccc;
+                border-radius: 8px;
+                background-color: #fff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .icon {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                font-size: 24px;
+                color: #007BFF;
+                cursor: pointer;
+                transition: transform 0.2s;
+            }
+            .icon:hover {
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <section class="content-section">
+            <h2>section title</h2>
+            <p>This is a sample section. The icon is placed at bottom-right corner of this section.</p>
+            <i class="icon">&#9733;</i>
+        </section>
+    </body>
+    </html>
+
